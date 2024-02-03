@@ -3,7 +3,7 @@ export default {
     name: "AppHeader",
 
     data: () => ({
-        li_links: [
+        links: [
             {
                 text: 'Characters',
                 url: '#',
@@ -60,7 +60,7 @@ export default {
 
     methods: {
         createPath(img) {
-            const url = new URL("@/assets/vue-dc-comics-1/", import.meta.URL)
+            const url = new URL("", import.meta.URL)
             return path.src;
         }
     }
@@ -74,16 +74,10 @@ export default {
         </figure>
         <nav>
             <ul>
-                <li>CHARACTERS</li>
-                <li class="active">COMICS</li>
-                <li>MOVIES</li>
-                <li>TV</li>
-                <li>GAMES</li>
-                <li>COLLECTIBLES</li>
-                <li>VIDEOS</li>
-                <li>FANS</li>
-                <li>NEWS</li>
-                <li>SHOP</li>
+                <li v-for="link in links">
+                    <a :href="link.url">{{ link.text }}</a>
+                </li>
+
             </ul>
         </nav>
     </header>
@@ -117,14 +111,25 @@ img {
     max-width: 60px;
 }
 
+/* contenitori dei link */
+
 nav ul li {
     height: 100%;
-    font-size: 12px;
     line-height: 80px;
     vertical-align: middle;
 }
 
-.active {
+/* link */
+
+a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.active,
+li:hover {
     border-bottom: 2px solid dodgerblue;
 }
 </style>
