@@ -94,24 +94,34 @@ export default {
             return path.href;
         } */
 }
-}
+
 </script>
 
 <template>
-    <div class="container">
-        <button class="series">CURRENT SERIES</button>
-        <div class="row">
-            <div class="card">
-                <figure>
-                    <img src="" />
-                </figure>
-                <figcaption></figcaption>
+    <section id="comics-list">
+        <div class="container">
+            <button class="series">CURRENT SERIES</button>
+            <div class="row">
+                <div class="card" v-for="(comic, i) in comics" :key="i">
+                    <figure>
+                        <img :src="comic.thumb" :alt="comic.series" />
+                    </figure>
+                    <figcaption>
+                        <h4>{{ comic.series }}</h4>
+                    </figcaption>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
-<style>
+<style scoped>
+/* sfondo della sezione */
+
+#comics-list {
+    background-color: black;
+}
+
 /* contenitore */
 .container {
     max-width: 1080px;
@@ -138,6 +148,7 @@ export default {
     flex-wrap: wrap;
     flex-direction: row;
     align-content: flex-start;
+    margin: 0 -10px;
 }
 
 /* card */
@@ -145,5 +156,24 @@ export default {
 .card {
     padding: 0 10px;
     margin-bottom: 20px;
+    max-width: calc(100% / 6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: 200px;
+}
+
+figcaption {
+    width: 100%;
+    text-align: left;
+}
+
+h4 {
+    color: white;
+    font-size: 14px;
 }
 </style>
