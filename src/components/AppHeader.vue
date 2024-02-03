@@ -86,8 +86,6 @@ export default {
 <style scoped>
 /* generico */
 header {
-    max-width: 1080px;
-    margin: 0 auto;
     height: 80px;
     display: flex;
     justify-content: space-between;
