@@ -9,7 +9,9 @@ export default {
         <button class="series">CURRENT SERIES</button>
         <div class="row">
             <div class="card">
-                <figure></figure>
+                <figure>
+                    <img src="" />
+                </figure>
                 <figcaption></figcaption>
             </div>
         </div>
@@ -28,5 +30,21 @@ export default {
     top: 0;
     transform: translateY(-50%);
     border: none;
+}
+
+/* riga */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+/* card */
+
+.card {
+    padding: 0 10px;
+    margin-bottom: 20px;
 }
 </style>
