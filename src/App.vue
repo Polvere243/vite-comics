@@ -9,9 +9,7 @@ export default {
 </script>
 
 <template>
-    <div class="container">
-        <AppHeader></AppHeader>
-    </div>
+    <AppHeader></AppHeader>
 </template>
 
 <style>
@@ -27,12 +25,5 @@ export default {
 /* generici */
 ul {
     list-style-type: none;
-}
-
-/* contenitore */
-
-.container {
-    max-width: 1080px;
-    margin: 0 auto;
 }
 </style>

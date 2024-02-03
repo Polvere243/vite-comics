@@ -77,16 +77,18 @@ export default {
                 <li v-for="link in links">
                     <a :href="link.url">{{ link.text }}</a>
                 </li>
-
             </ul>
         </nav>
     </header>
+    <div class="jumbotron"></div>
 </template>
 
 <style scoped>
 /* generico */
 header {
     height: 80px;
+    max-width: 1080px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
@@ -130,5 +132,13 @@ a {
 .active,
 li:hover {
     border-bottom: 2px solid dodgerblue;
+}
+
+/* jumbotron */
+
+.jumbotron {
+    height: 800px;
+    background-image: url(../assets/assets-vue-dc-comics-1/img/jumbotron.jpg);
+
 }
 </style>
