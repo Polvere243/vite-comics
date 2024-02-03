@@ -74,7 +74,7 @@ export default {
         </figure>
         <nav>
             <ul>
-                <li v-for="link in links">
+                <li v-for="(link, i) in links" :key="i">
                     <a :href="link.url">{{ link.text }}</a>
                 </li>
 
