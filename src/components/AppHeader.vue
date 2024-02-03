@@ -124,6 +124,7 @@ a {
     color: black;
     text-transform: uppercase;
     font-size: 10px;
+    font-weight: 500;
 }
 
 .active,
