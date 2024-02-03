@@ -147,8 +147,9 @@ export default {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-content: flex-start;
+    justify-content: center;
     margin: 0 -10px;
+    width: 100%;
 }
 
 /* card */
