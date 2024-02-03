@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <div class="container relative">
+    <div class="container">
         <button class="series">CURRENT SERIES</button>
         <div class="row">
             <div class="card">
@@ -17,8 +17,16 @@ export default {
 </template>
 
 <style>
-/* contenitore */
-.container.relative {
+/* bottone */
+
+.series {
+    background-color: dodgerblue;
+    padding: 5px 10px;
+    color: white;
     position: relative;
+    left: 0;
+    top: 0;
+    transform: translateY(-50%);
+    border: none;
 }
 </style>
