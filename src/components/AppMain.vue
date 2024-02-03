@@ -87,7 +87,13 @@ export default {
                 type: 'graphic novel',
             },
         ]
-    })
+    }),
+    /* methods: {
+        createImageUrl(img) {
+            const url = new URL ("", import.meta.URL)
+            return path.href;
+        } */
+}
 }
 </script>
 
@@ -106,6 +112,12 @@ export default {
 </template>
 
 <style>
+/* contenitore */
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
 /* bottone */
 
 .series {
