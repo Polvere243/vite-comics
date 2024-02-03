@@ -1,5 +1,5 @@
 <script>
-import AppHeader from './components/AppHeader.vue'
+import AppHeader from 'components/AppHeader.vue'
 export default {
     components: {
         AppHeader
@@ -9,6 +9,7 @@ export default {
 </script>
 
 <template>
+    <div class="container"></div>
     <AppHeader></AppHeader>
 </template>
 
@@ -25,5 +26,12 @@ export default {
 /* generici */
 ul {
     list-style-type: none;
+}
+
+/* contenitore */
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
 }
 </style>
