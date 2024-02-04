@@ -1,10 +1,7 @@
 <script>
 export default {
-
-}
-</script>
     data: () => ({
-        components: AppMain,
+        name: "AppMain",
         comics: [
             {
                 thumb:
@@ -91,24 +88,11 @@ export default {
                 type: 'graphic novel',
             },
         ]
-    }),
-    computed: {
-        isFirstIndex() {
-            return this.comics[i] === 1;
-        },
-
-        isLastIndex() {
-            return this.comics[i] === this.comics.length - 1;
-        }
-    },
-    /* methods: {
-        createImageUrl(img) {
-            const url = new URL ("", import.meta.URL)
-            return path.href;
-        } */
+    })
 }
-
 </script>
+    
+
 
 <template>
     <section id="comics-list">

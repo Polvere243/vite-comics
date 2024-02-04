@@ -137,8 +137,10 @@ li:hover {
 /* jumbotron */
 
 .jumbotron {
-    height: 800px;
+    height: 500px;
     background-image: url(../assets/assets-vue-dc-comics-1/img/jumbotron.jpg);
-
+    background-position: center, top;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 </style>
