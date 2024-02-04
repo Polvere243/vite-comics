@@ -36,4 +36,8 @@ ul {
 img {
     display: block;
 }
+
+a {
+    text-decoration: none;
+}
 </style>
