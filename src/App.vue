@@ -7,7 +7,7 @@ export default {
     components: {
         AppHeader,
         AppMain,
-
+        AppFooter
     }
 }
 </script>
@@ -15,6 +15,7 @@ export default {
 <template>
     <AppHeader></AppHeader>
     <AppMain></AppMain>
+    <AppFooter></AppFooter>
 </template>
 
 <style>
