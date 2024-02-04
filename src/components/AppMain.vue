@@ -108,6 +108,13 @@ export default {
                     </figure>
                 </div>
             </div>
+            <div class="btn-box">
+                <button class="more">
+                    <h3>LOAD MORE</h3>
+                </button>
+
+            </div>
+
         </div>
     </section>
 </template>
@@ -177,10 +184,27 @@ figure {
 figcaption {
     width: 100%;
     text-align: left;
+    margin-top: 10px;
 }
 
 h4 {
     color: white;
     font-size: 14px;
+}
+
+/* pulsante */
+.btn-box {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.more {
+    padding: 10px 50px;
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 12px;
 }
 </style>
