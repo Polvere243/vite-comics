@@ -88,6 +88,15 @@ export default {
             },
         ]
     }),
+    computed: {
+        isFirstIndex() {
+            return this.comics[i] === 1;
+        },
+
+        isLastIndex() {
+            return this.comics[i] === this.comics.length - 1;
+        }
+    },
     /* methods: {
         createImageUrl(img) {
             const url = new URL ("", import.meta.URL)
@@ -105,10 +114,10 @@ export default {
                 <div class="card" v-for="(comic, i) in comics" :key="i">
                     <figure>
                         <img :src="comic.thumb" :alt="comic.series" />
+                        <figcaption>
+                            <h4>{{ comic.series }}</h4>
+                        </figcaption>
                     </figure>
-                    <figcaption>
-                        <h4>{{ comic.series }}</h4>
-                    </figcaption>
                 </div>
             </div>
         </div>
@@ -116,6 +125,13 @@ export default {
 </template>
 
 <style scoped>
+/* utili */
+
+.height {
+    height: 200px;
+}
+
+
 /* sfondo della sezione */
 
 #comics-list {
@@ -148,7 +164,6 @@ export default {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    margin: 0 -10px;
     width: 100%;
 }
 
@@ -165,7 +180,10 @@ export default {
 
 img {
     max-width: 100%;
-    height: 200px;
+}
+
+figure {
+    text-align: center;
 }
 
 figcaption {
