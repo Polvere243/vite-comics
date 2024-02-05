@@ -19,25 +19,5 @@ export default {
 </template>
 
 <style lang="scss">
-/* css reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Open Sans;
-    font-family: Open Sans Condensed;
-}
-
-/* generici */
-ul {
-    list-style-type: none;
-}
-
-img {
-    display: block;
-}
-
-a {
-    text-decoration: none;
-}
+@use "./assets/scss/style.scss"
 </style>
