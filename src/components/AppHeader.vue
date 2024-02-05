@@ -131,7 +131,7 @@ a {
 
 .active,
 li:hover {
-    border-bottom: 2px solid dodgerblue;
+    border-bottom: 4px solid dodgerblue;
 }
 
 /* jumbotron */
