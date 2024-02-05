@@ -204,7 +204,7 @@ export default {
     </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 /* sfondo della sezione */
 
 #site-links {

@@ -119,7 +119,7 @@ export default {
     </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 /* utili */
 
 .height {

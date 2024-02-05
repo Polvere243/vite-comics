@@ -42,7 +42,7 @@ export default {
     </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 /* link alle sezioni del negozio */
 #shop-sections {
     height: 100px;

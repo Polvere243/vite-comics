@@ -18,7 +18,7 @@ export default {
     <AppFooter></AppFooter>
 </template>
 
-<style>
+<style lang="scss">
 /* css reset */
 * {
     margin: 0;
