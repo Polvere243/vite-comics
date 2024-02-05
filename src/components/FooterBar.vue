@@ -57,19 +57,19 @@ export default {
     align-items: center;
     height: 100%;
     padding: 0 20px;
-}
 
-.links-pic img {
-    max-width: 100%;
-    height: 35px;
-}
+    img {
+        max-width: 100%;
+        height: 35px;
+    }
 
-.links-pic li a {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
+    li a {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+    }
 }
 </style>
