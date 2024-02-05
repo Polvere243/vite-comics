@@ -120,13 +120,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-/* utili */
-
-.height {
-    height: 200px;
-}
-
-
 /* sfondo della sezione */
 
 #comics-list {
@@ -160,51 +153,55 @@ export default {
     flex-direction: row;
     justify-content: center;
     width: 100%;
+
+    /* card */
+    .card {
+        padding: 0 10px;
+        margin-bottom: 20px;
+        max-width: calc(100% / 6);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+        }
+    }
 }
 
-/* card */
 
-.card {
-    padding: 0 10px;
-    margin-bottom: 20px;
-    max-width: calc(100% / 6);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-img {
-    max-width: 100%;
-}
 
 figure {
     text-align: center;
+
+    figcaption {
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+
+        h4 {
+            color: white;
+            font-size: 14px;
+        }
+    }
 }
 
-figcaption {
-    width: 100%;
-    text-align: left;
-    margin-top: 10px;
-}
 
-h4 {
-    color: white;
-    font-size: 14px;
-}
 
 /* pulsante */
 .btn-box {
     margin-top: 20px;
     text-align: center;
-}
 
-.more {
-    padding: 10px 50px;
-    background-color: dodgerblue;
-    border: none;
-    color: white;
-    margin-bottom: 20px;
-    font-weight: 100;
-    font-size: 12px;
+    .more {
+        padding: 10px 50px;
+        background-color: dodgerblue;
+        border: none;
+        color: white;
+        margin-bottom: 20px;
+        font-weight: 100;
+        font-size: 12px;
+    }
 }
 </style>
