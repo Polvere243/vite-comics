@@ -3,11 +3,11 @@ export default {
     name: "AppHeader",
 
     data: () => ({
-        props: {
-            text: String
-        }
 
     }),
+    props: {
+        links: Array
+    }
 
 }
 </script>

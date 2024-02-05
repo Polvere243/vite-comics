@@ -2,12 +2,10 @@
 export default {
     data: () => ({
         name: "AppMain",
-        props: {
-            thumb: String,
-            series: String,
-
-        }
-    })
+    }),
+    props: {
+        comics: Array
+    }
 }
 </script>
     
