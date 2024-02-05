@@ -83,7 +83,7 @@ export default {
     <div class="jumbotron"></div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 /* generico */
 header {
     height: 80px;
