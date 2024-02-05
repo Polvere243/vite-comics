@@ -223,7 +223,7 @@ export default {
     height: 300px;
     padding: 20px 0 0 0;
 
-    footer h5 {
+    h5 {
         color: white;
         font-weight: 800;
     }
@@ -280,4 +280,5 @@ export default {
 .links-list {
     display: flex;
     gap: 20px
-}</style>
+}
+</style>
