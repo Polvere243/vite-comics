@@ -117,22 +117,24 @@ nav ul li {
     height: 100%;
     line-height: 80px;
     vertical-align: middle;
+
+    /* link */
+    a {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    &.active,
+    &:hover {
+        border-bottom: 4px solid dodgerblue;
+    }
 }
 
-/* link */
 
-a {
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-    font-size: 10px;
-    font-weight: 500;
-}
 
-.active,
-li:hover {
-    border-bottom: 4px solid dodgerblue;
-}
 
 /* jumbotron */
 
