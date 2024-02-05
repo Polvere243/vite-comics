@@ -222,24 +222,24 @@ export default {
     margin: 0 0 0 130px;
     height: 300px;
     padding: 20px 0 0 0;
-}
 
-footer h5 {
-    color: white;
-    font-weight: 800;
-}
+    footer h5 {
+        color: white;
+        font-weight: 800;
+    }
 
-.lists-row a {
-    color: rgb(135, 126, 126);
-    font-size: 12px;
-}
+    a {
+        color: rgb(135, 126, 126);
+        font-size: 12px;
+    }
 
-.lists-row li {
-    flex-basis: 30px;
-}
+    li {
+        flex-basis: 30px;
+    }
 
-.lists-row div {
-    margin-bottom: 10px;
+    div {
+        margin-bottom: 10px;
+    }
 }
 
 /* ultima sezione */
@@ -280,5 +280,4 @@ footer h5 {
 .links-list {
     display: flex;
     gap: 20px
-}
-</style>
+}</style>
